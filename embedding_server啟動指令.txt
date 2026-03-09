@@ -1,0 +1,5 @@
+docker run -p 8080:80 \
+  --gpus all \
+  -v $PWD/data:/data \
+  ghcr.io/huggingface/text-embeddings-inference:latest \
+  --model-id BAAI/bge-m3
