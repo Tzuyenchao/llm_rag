@@ -1,7 +1,20 @@
 [project]
 name = "llm-rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "LLM RAG API Server"
 readme = "README.md"
 requires-python = ">=3.10,<3.11"
-dependencies = []
+
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.6.0",
+
+    "haystack-ai>=2.0.0",
+    "qdrant-haystack>=3.0.0",
+
+    "pypdf>=4.0.0",
+    "requests>=2.31.0",
+
+    "openai>=1.14.0"
+]
