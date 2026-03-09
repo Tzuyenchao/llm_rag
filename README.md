@@ -163,12 +163,6 @@ See:
 embedding_server啟動指令.txt
 ```
 
-Example:
-
-```bash
-text-embeddings-inference --model-id BAAI/bge-m3
-```
-
 This embedding server runs locally and generates embeddings without using any external API.
 
 ---
@@ -181,12 +175,6 @@ See:
 llm_server啟動指令.txt
 ```
 
-Example:
-
-```bash
-vllm serve Qwen/Qwen3-8B
-```
-
 The LLM server runs locally to generate responses.
 
 ---
@@ -194,7 +182,7 @@ The LLM server runs locally to generate responses.
 ## Start API Server
 
 ```bash
-uvicorn api_server:app --host 0.0.0.0 --port 8001
+python api_server.py
 ```
 
 When the API server starts:
